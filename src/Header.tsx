@@ -11,7 +11,7 @@ function Header() {
         <h2>
           Dynamic{" "}
           <span>
-            <img src="/src/assets/react.svg" width="35px" />
+            <img src="src/assets/react.svg" width="35px" />
           </span>{" "}
           React Page
         </h2>
