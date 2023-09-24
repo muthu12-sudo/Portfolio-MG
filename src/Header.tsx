@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Header.css";
-
+import reactlogo from "./assets/react.svg";
+import cartoonmg from "../public/Cartoon-MG.png";
 function Header() {
   const [count, setCount] = useState(0);
 
@@ -11,11 +12,11 @@ function Header() {
         <h2>
           Dynamic{" "}
           <span>
-            <img src="src/assets/react.svg" width="35px" />
+            <img src={reactlogo} width="35px" />
           </span>{" "}
           React Page
         </h2>
-        <img id="mg" src="/Cartoon-MG.png" width="300px" />
+        <img id="mg" src={cartoonmg} width="300px" />
         <h3>Click Here to See the Dynamic Content</h3>
         <br />
         <button
