@@ -1,0 +1,39 @@
+*{
+    color:#01030f;
+    font-family: 'Note';
+}
+
+@font-face {
+    font-family: 'Note';
+    src:url('fonts/Note.ttf');
+  }
+  
+  
+.header{
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+#mg{
+    padding: 20px;
+    width:350px;
+    height: auto;
+}
+.header button{
+    background: #e50b2c;
+    color:#fff;
+    padding:10px;
+    border:none;
+    border-radius: 5px 5px;
+    width:100px;
+    transition: all ease-in-out .2s ;
+}
+.header button:hover{
+    background:#2be00b ;
+    color:#01030f;
+    box-shadow: 0px 0px 41px -6px #2be00b;
+-webkit-box-shadow: 0px 0px 41px -6px #2be00b;
+-moz-box-shadow: 0px 0px 41px -6px #2be00b;
+    
+}

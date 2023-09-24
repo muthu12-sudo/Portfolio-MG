@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Header.css";
+import "./style.css";
 import reactlogo from "./assets/react.svg";
 import cartoonmg from "/Cartoon-MG.png";
 function Header() {
@@ -18,9 +18,7 @@ function Header() {
         <img id="mg" src={cartoonmg} width="300px" />
         <h2>Click Here to See the Dynamic Content</h2>
         <br />
-        <button className="btn" onClick={() => setCount(count + 1)}>
-          Click {count}
-        </button>
+        <button onClick={() => setCount(count + 1)}>Click {count}</button>
       </div>
     </>
   );
