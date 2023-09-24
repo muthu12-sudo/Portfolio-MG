@@ -1,9 +1,9 @@
 
 .header{
     text-align: center;
-    background: rgb(255, 247, 135);
+    background: #FFDCE0;
     padding: 20px;
-    color:white;
+    color:#050001;
     border-radius: 0 0 20px 20px;
 }
 #mg img{
@@ -11,4 +11,12 @@
     width:400px;
     margin:0;
     height: auto;
+}
+.header button{
+    background: #fd7521;
+    color:#050001;
+}
+.header button:hover{
+    background: #fef39f;
+    color:#050001;
 }
