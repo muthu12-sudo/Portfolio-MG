@@ -1,5 +1,6 @@
-import "./App.css";
-function App() {
+import "./Header.css";
+
+function Header() {
   return (
     <>
       <div className="header">
@@ -9,4 +10,4 @@ function App() {
   );
 }
 
-export default App;
+export default Header;
