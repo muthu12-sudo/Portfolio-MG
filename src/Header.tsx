@@ -7,20 +7,21 @@ function Header() {
   return (
     <>
       <div className="header">
-        <h1>
-          This is Dynamic{" "}
+        <br></br>
+        <h2>
+          Dynamic{" "}
           <span>
-            <img src="/src/assets/react.svg" />
+            <img src="/src/assets/react.svg" width="35px" />
           </span>{" "}
           React Page
-        </h1>
+        </h2>
         <img id="mg" src="/Cartoon-MG.png" width="300px" />
-        <h1>Welcome</h1>
+        <h3>Click Here to See the Dynamic Content</h3>
         <br />
         <button
           className="btn btn-secondary"
           onClick={() => setCount(count + 1)}>
-          Welcome {count}
+          Click {count}
         </button>
       </div>
     </>
