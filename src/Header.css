@@ -2,7 +2,13 @@
 .header{
     text-align: center;
     background: rgb(255, 247, 135);
-    padding: 2rem;
+    padding: 20px;
     color:white;
     border-radius: 0 0 20px 20px;
+}
+#mg img{
+    padding: 10px;
+    width:400px;
+    margin:0;
+    height: auto;
 }
