@@ -9,18 +9,16 @@ function Header() {
     <>
       <div className="header">
         <br></br>
-        <h2>
+        <h1>
           <span>
-            <img src={reactlogo} width="35px" />
+            <img src={reactlogo} width="40px" />
           </span>{" "}
           React Dynamic Page
-        </h2>
+        </h1>
         <img id="mg" src={cartoonmg} width="300px" />
-        <h3>Click Here to See the Dynamic Content</h3>
+        <h2>Click Here to See the Dynamic Content</h2>
         <br />
-        <button
-          className="btn btn-secondary"
-          onClick={() => setCount(count + 1)}>
+        <button className="btn" onClick={() => setCount(count + 1)}>
           Click {count}
         </button>
       </div>

@@ -1,11 +1,20 @@
-
+*{
+    color:#050001;
+    font-family: 'Note';
+}
+@font-face {
+    font-family: 'Note';
+    src:url('fonts/Note.ttf');
+  }
+  
+  
 .header{
     text-align: center;
     background: #FFDCE0;
     padding: 20px;
-    color:#050001;
     border-radius: 0 0 20px 20px;
 }
+
 #mg img{
     padding: 10px;
     width:400px;
@@ -14,9 +23,7 @@
 }
 .header button{
     background: #fd7521;
-    color:#050001;
 }
 .header button:hover{
     background: #fef39f;
-    color:#050001;
 }
