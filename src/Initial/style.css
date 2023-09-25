@@ -127,20 +127,20 @@ h2 {
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 568px) {
   .header {
     .container {
       max-width: 100%;
       margin: 0 auto;
 
       .bubble {
-        font-size: 20px;
+        padding: 2px 10px;
         &:nth-child(1):after {
           left: 100px;
         }
       }
       .bubble p {
-        font-size: 18px;
+        font-size: 20px;
       }
     }
   }

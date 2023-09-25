@@ -15,7 +15,7 @@ function Header() {
     <>
       <div className="header">
         <img src={reactlogo} width="40px" alt="React Logo" />
-        <h1>Welcome Everyone!</h1>
+        <h1>Welcome, All!</h1>
         <div className="container">
           <div className="bubble">
             <p>Currently, this&nbsp; site is under construction</p>
@@ -28,9 +28,7 @@ function Header() {
           height={flag ? "" : 444}
           alt={flag ? "Cartoon Image" : "No Meme"}
         />
-        <h2>
-          The&nbsp; site created for an Personal Portfolio for Me &#128521;.
-        </h2>
+        <h2>Personal Portfolio for Me &#128521;.</h2>
         <br />
         <button onClick={changeImg}>Bye</button>
       </div>
