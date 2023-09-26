@@ -1,6 +1,5 @@
 * {
   color: #01030f;
-  font-family: "Note";
 }
 
 @font-face {
@@ -15,11 +14,13 @@
 .header {
   text-align: center;
   padding: 20px;
+  font-family: "Note";
   border-radius: 0 0 20px 20px;
 }
 .header h1,
 h2 {
   padding: 10px;
+  font-family: "Note";
 }
 #mg {
   padding: 20px;
