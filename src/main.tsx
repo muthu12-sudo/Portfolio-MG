@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./Initial/Header.tsx";
+import ErrorPage from "./Initial/ErrorPage.tsx";
+import Navbar from "./Nav/Navbar.tsx";
 import "bootstrap/dist/css/bootstrap.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Header />
+    <Navbar />
   </React.StrictMode>
 );

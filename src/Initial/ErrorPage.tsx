@@ -4,7 +4,7 @@ import reactlogo from "/react.gif";
 import cartoonmg from "/Cartoon-MG.png";
 import nomeme from "/nomeme.png";
 
-function Header() {
+function ErrorPage() {
   const [flag, isImage] = useState(true);
 
   const changeImg = () => {
@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <>
-      <div className="header">
+      <div className="Error">
         <img src={reactlogo} width="40px" alt="React Logo" />
         <h1>Welcome, All!</h1>
         <div className="container">
@@ -36,4 +36,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default ErrorPage;

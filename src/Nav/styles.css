@@ -1,0 +1,40 @@
+/* Navbar */
+@font-face {
+  font-family: "Note";
+  src: url("../fonts/Note.ttf");
+}
+@font-face {
+  font-family: "Berolina";
+  src: url("../fonts/Berolina.ttf");
+}
+* {
+  background: #f5f7ff;
+  color: #01030f;
+  margin: 0;
+  padding: 0;
+}
+.Navbar {
+  font-family: "Berolina";
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  margin: 0;
+  background: #bbc5fc;
+  align-items: baseline;
+  transition: all 0.3s ease-in-out;
+  flex-direction: row;
+}
+.Navbar h1 {
+  background: #bbc5fc;
+  transition: all ease-in-out 0.2s;
+}
+.Navbar h1:hover {
+  text-shadow: #f5f7ff 2px 2px 5px;
+}
+.Navbar h1:first-child {
+  margin-right: auto;
+  font-family: "Note";
+}
+.Navbar:hover {
+  box-shadow: #bbc5fc 5px 5px 20px;
+}

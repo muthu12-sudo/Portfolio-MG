@@ -1,3 +1,5 @@
+/* ErrorPage */
+
 * {
   color: #01030f;
 }
@@ -11,13 +13,13 @@
   src: url("../fonts/Berolina.ttf");
 }
 
-.header {
+.Error {
   text-align: center;
   padding: 20px;
   font-family: "Note";
   border-radius: 0 0 20px 20px;
 }
-.header h1,
+.Error h1,
 h2 {
   padding: 10px;
   font-family: "Note";
@@ -25,7 +27,7 @@ h2 {
 #mg {
   padding: 20px;
 }
-.header button {
+.Error button {
   background: #e50b2c;
   color: #fff;
   padding: 10px;
@@ -34,7 +36,7 @@ h2 {
   width: 100px;
   transition: all ease-in-out 0.2s;
 }
-.header button:hover {
+.Error button:hover {
   background: #2be00b;
   color: #01030f;
   box-shadow: 0px 0px 41px -6px #2be00b;
@@ -42,7 +44,7 @@ h2 {
   -moz-box-shadow: 0px 0px 41px -6px #2be00b;
 }
 
-.header {
+.Error {
   .container {
     max-width: 550px;
     margin: 0 auto;
@@ -129,7 +131,7 @@ h2 {
   }
 }
 @media (max-width: 568px) {
-  .header {
+  .Error {
     .container {
       max-width: 100%;
       margin: 0 auto;
