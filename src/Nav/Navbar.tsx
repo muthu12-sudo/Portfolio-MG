@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./styles.css";
+import "../styles.css";
 
 export default function Navbar() {
   const [navbarWidth, setNavbarWidth] = useState("0%");
