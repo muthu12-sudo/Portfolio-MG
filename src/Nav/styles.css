@@ -7,34 +7,81 @@
   font-family: "Berolina";
   src: url("../fonts/Berolina.ttf");
 }
+@font-face {
+  font-family: "Alice";
+  src: url("../fonts/Alice.ttf");
+}
 * {
-  background: #f5f7ff;
   color: #01030f;
   margin: 0;
   padding: 0;
 }
+.NavbarContainer {
+  position: sticky;
+  top: 0px;
+}
+.NavbarContainer hr {
+  margin: 0;
+  color: #2be00b;
+  border-width: 3px;
+}
+
 .Navbar {
-  font-family: "Berolina";
   display: flex;
   gap: 30px;
-  padding: 30px;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 25px;
   margin: 0;
-  background: #bbc5fc;
+  background: #f5f7ff;
+  width: 100%;
+  overflow: hidden;
   align-items: baseline;
   transition: all 0.3s ease-in-out;
   flex-direction: row;
 }
-.Navbar h1 {
-  background: #bbc5fc;
+.Navbar span {
+  font-family: "Alice";
+  font-size: 30px;
   transition: all ease-in-out 0.2s;
+  color: #333;
 }
-.Navbar h1:hover {
-  text-shadow: #f5f7ff 2px 2px 5px;
+.Navbar :hover {
+  text-shadow: #2be00b 1px 1px 40px;
 }
-.Navbar h1:first-child {
+.NavbarContainer :not(h1, span):hover {
+  box-shadow: #333 1px 1px 10px;
+}
+.Navbar :first-child {
   margin-right: auto;
+  font-size: 38px;
+  transition: all ease-in-out 0.2s;
+  color: #333;
   font-family: "Note";
 }
-.Navbar:hover {
-  box-shadow: #bbc5fc 5px 5px 20px;
+@media (max-width: 768px) {
+  .Navbar {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .Navbar span {
+    font-size: 25px;
+  }
+  .Navbar :first-child {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 568px) {
+  .Navbar {
+    padding: 15px;
+    gap: 10px;
+  }
+  .Navbar span {
+    font-size: 20px;
+  }
+  .Navbar :first-child {
+    font-size: 28px;
+  }
 }
