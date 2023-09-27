@@ -131,6 +131,9 @@ body {
 .card__details {
   font-family: "Inconsolata", monospace;
   padding: 4rem 2rem;
+  background: url("/Ok.png") no-repeat;
+  background-size: 200px;
+  background-position: right;
 }
 .card__details ul {
   list-style: none;
@@ -141,9 +144,10 @@ body {
   text-align: center;
   font-size: 1.8rem;
   padding: 1rem;
-}
-.card__details ul li:not(:last-child) {
   border-bottom: 1px solid #eee;
+}
+.card__details ul li:last-child {
+  border-bottom: none;
 }
 @media only screen and (max-width: 37.5em), only screen and (hover: none) {
   .card {

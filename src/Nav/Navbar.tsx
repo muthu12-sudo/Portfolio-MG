@@ -25,9 +25,8 @@ export default function Navbar() {
       <div className="NavbarContainer">
         <div className="Navbar">
           <h1>Muthuganesh R</h1>
-          <span>About</span>
-          <span>Projects</span>
-          <span>Education</span>
+          <span>Fresher</span>
+          <span>Web developer</span>
         </div>
         <hr style={{ width: navbarWidth }} />
       </div>
