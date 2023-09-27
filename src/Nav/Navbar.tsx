@@ -11,6 +11,7 @@ export default function Navbar() {
     const percentageScrolled = (scrollY / PageTotalWidth) * 100;
 
     const newWidth = Math.min(Math.max(percentageScrolled, 0), 100) + "%";
+
     setNavbarWidth(newWidth);
   };
   useEffect(() => {
