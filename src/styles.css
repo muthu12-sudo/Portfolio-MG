@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /* Navbar */
 @font-face {
   font-family: "Note";
@@ -18,6 +21,7 @@
 .NavbarContainer {
   position: sticky;
   top: 0px;
+  z-index: 5;
 }
 .NavbarContainer hr {
   margin: 0;
@@ -28,7 +32,6 @@
 .Navbar {
   display: flex;
   gap: 30px;
-  position: relative;
   padding: 25px;
   margin: 0;
   background: #f5f7ff;
@@ -95,11 +98,18 @@
 #mgimg {
   margin: 10px;
   width: 30%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   border-radius: 25px;
   align-items: baseline;
-  padding: 10px;
+}
+#mgimg img {
+  filter: brightness(120%);
+  filter: opacity(95%);
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .ProfileContainer,
