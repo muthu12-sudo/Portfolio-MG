@@ -5,7 +5,7 @@ export default function Profile() {
       <div className="Profile ">
         {" "}
         <div id="mgimg">
-          <img src={MGImg} width="300px" />
+          <img src={MGImg} />
         </div>
         <div className="ProfileContainer">
           <h1>Hello There </h1>
