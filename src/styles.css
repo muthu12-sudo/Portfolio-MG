@@ -79,13 +79,6 @@ html {
 @media (max-width: 568px) {
   .Navbar {
     padding: 15px;
-    gap: 10px;
-  }
-  .Navbar span {
-    font-size: 20px;
-  }
-  .Navbar :first-child {
-    font-size: 28px;
   }
 }
 
@@ -95,7 +88,6 @@ html {
   flex-flow: row nowrap;
   overflow: hidden;
   padding-top: 20px;
-  justify-content: space-evenly;
 }
 
 #mgimg {
@@ -136,7 +128,7 @@ html {
 }
 .ProfileContainer p {
   font-family: "Alice";
-  font-size: 22px;
+  font-size: 20px;
   text-align: justify;
 }
 @media (max-width: 875px) {
@@ -145,12 +137,31 @@ html {
   }
   .ProfileContainer {
     justify-content: center;
-    margin: 10px auto;
+    border-radius: 0;
+    border-top: #01030f solid 1px;
+    border-bottom: #01030f solid 1px;
+    margin: 0px auto;
     width: 90%;
+  }
+  .ProfileContainer p {
+    font-size: 18px;
   }
   #mgimg {
     margin: 20px auto;
     width: 90%;
+    height: 600px;
+  }
+}
+@media (max-width: 530px) {
+  #mgimg {
     height: 400px;
+  }
+}
+@media (max-width: 430px) {
+  #mgimg {
+    height: 300px;
+  }
+  .ProfileContainer p {
+    font-size: 18px;
   }
 }

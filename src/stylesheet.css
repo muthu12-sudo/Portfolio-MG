@@ -17,10 +17,6 @@ html {
   }
 }
 
-body {
-  height: 100vh;
-}
-
 .artboard {
   display: flex;
   z-index: 1;
@@ -53,10 +49,10 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  -webkit-backface-visibility: hidden; /* We don't want to see the back part of the element. */
-  backface-visibility: hidden; /* We don't want to see the back part of the element. */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   border-radius: 3px;
-  overflow: hidden; /* The image is overflowing the parent. */
+  overflow: hidden;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
 }
 .card__side--front {
@@ -149,41 +145,13 @@ body {
 .card__details ul li:last-child {
   border-bottom: none;
 }
-@media only screen and (max-width: 37.5em) {
-  .card {
-    height: auto;
-    border-radius: 3px;
-    background-color: #fff;
-    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
-  }
-  .card__side {
-    height: auto;
-    position: relative;
-    box-shadow: none;
-  }
 
-  .card__details {
-    padding: 3rem 2rem;
-  }
-  .card__theme {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: translate(0);
-    width: 100%;
-    padding: 5rem 4rem 1.5rem 4rem;
-    text-align: right;
-  }
-  .card__theme-box {
-    margin-bottom: 1.5rem;
-  }
-  .card__title {
-    font-size: 4rem;
-  }
-}
 @media only screen and (max-width: 650px) {
   .card__details {
     background-size: 100px;
     background-position: right bottom;
+  }
+  .card__side--front {
+    background-size: 200px;
   }
 }
