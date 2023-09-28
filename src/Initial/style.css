@@ -4,15 +4,6 @@
   color: #01030f;
 }
 
-@font-face {
-  font-family: "Note";
-  src: url("../fonts/Note.ttf");
-}
-@font-face {
-  font-family: "Berolina";
-  src: url("../fonts/Berolina.ttf");
-}
-
 .Error {
   text-align: center;
   padding: 20px;
@@ -136,6 +127,10 @@
   }
 }
 @media (max-width: 568px) {
+  .Error h1,
+  .Error h2 {
+    font-size: 25px;
+  }
   .Error {
     .container {
       max-width: 100%;

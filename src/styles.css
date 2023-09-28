@@ -1,23 +1,46 @@
 html {
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-moz-scrollbar {
+  width: 5px;
+}
+
+::-ms-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #64616e;
+}
+
+::-moz-scrollbar-thumb {
+  background: #64616e;
+}
+
+::-ms-scrollbar-thumb {
+  background: #64616e;
+}
 /* Navbar */
 @font-face {
   font-family: "Note";
   src: url("./fonts/Note.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Berolina";
   src: url("./fonts/Berolina.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Alice";
   src: url("./fonts/Alice.ttf");
+  font-display: swap;
 }
-* {
-  margin: 0;
-  padding: 0;
-}
+
 .NavbarContainer {
   position: sticky;
   top: 0px;

@@ -24,8 +24,8 @@ function ErrorPage() {
         <img
           id="mg"
           src={flag ? cartoonmg : nomeme}
-          width={350}
-          height={flag ? "" : 444}
+          width={300}
+          height={flag ? "" : 378.95}
           alt={flag ? "Cartoon Image" : "No Meme"}
         />
         <h2>Personal Portfolio for Me &#128521;.</h2>
