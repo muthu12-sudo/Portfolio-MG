@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import "../styles.css";
 
-export default function Navbar() {
+interface NavbarProps {
+  type: string;
+}
+
+export default function Navbar(props: NavbarProps) {
   const [navbarWidth, setNavbarWidth] = useState("0%");
 
   const handleScroll = () => {
@@ -20,13 +24,14 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const { type } = props;
 
   return (
     <>
       <div className="NavbarContainer">
         <div className="Navbar">
           <h1>Muthuganesh R</h1>
-          <span>Fresher</span>
+          <button>{type}</button>
         </div>
         <hr style={{ width: navbarWidth }} />
       </div>

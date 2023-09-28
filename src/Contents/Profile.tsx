@@ -8,12 +8,13 @@ export default function Profile() {
           <img src={MGImg} width="300px" />
         </div>
         <div className="ProfileContainer">
+          <h1>Hello There </h1>
           <p>
-            LoremPariatur nostrud non deserunt nostrud cillum. Nostrud est
-            ullamco officia anim labore. Amet anim officia mollit velit sunt. Id
-            enim esse duis velit. Proident quis velit fugiat mollit amet sint
-            occaecat aliquip consectetur. Adipisicing aute Lorem ea laborum enim
-            consequat excepteur aliquip cillum anim.
+            &ensp; &ensp; &ensp; &ensp; &ensp; I am Muthuganesh, from
+            Tirunelveli, Tamil Nadu, India. I am seeking an entry-level job
+            while concurrently pursuing my Master's degree. I have excellent
+            skills in web development and software development, and I have
+            worked on several projects as a technical head and team leader.
           </p>
         </div>
       </div>

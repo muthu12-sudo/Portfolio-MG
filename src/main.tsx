@@ -8,7 +8,7 @@ import Skills from "./Contents/Skills.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Navbar />
+    <Navbar type="Contact Me" />
     <Profile />
     <Skills />
     <ErrorPage />
