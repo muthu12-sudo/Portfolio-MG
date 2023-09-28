@@ -26,7 +26,7 @@ html {
 .NavbarContainer hr {
   margin: 0;
   color: #f207f2;
-  opacity: 90%;
+  opacity: 70%;
   border-width: 2px;
 }
 
@@ -36,7 +36,7 @@ html {
   padding: 25px;
   margin: 0;
   background-image: linear-gradient(to bottom, #2afadf 10%, #4c83ff 90%);
-  opacity: 80%;
+  opacity: 90%;
   width: 100%;
   overflow: hidden;
   align-items: baseline;
