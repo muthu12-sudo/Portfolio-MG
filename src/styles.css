@@ -152,7 +152,7 @@ html {
 .ProfileContainer,
 #mgimg {
   transition: all ease-in-out 0.2s;
-  box-shadow: #01030f 0px 0px 2px;
+  box-shadow: #01030f 0px 0px 4px;
 }
 #mgimg:hover,
 .ProfileContainer:hover {
