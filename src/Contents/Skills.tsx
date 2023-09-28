@@ -15,11 +15,10 @@ export default function Skills() {
               <ul>
                 <li>Java</li>
                 <li>Python</li>
-                <li>HTML</li>
-                <li>CSS, Bootstrap</li>
-                <li>Deployment Pipelines</li>
-                <li>Large Apps Architectures</li>
-                <li>Naming Conventions</li>
+                <li>HTML, CSS & Bootstrap</li>
+                <li>Javascript with React</li>
+                <li>MS Office</li>
+                <li>Photoshop</li>
               </ul>
             </div>
           </div>
@@ -27,8 +26,8 @@ export default function Skills() {
           <div className="card__side card__side--front">
             <div className="card__theme">
               <div className="card__theme-box">
-                <p className="card__subject">Muthuganesh</p>
-                <p className="card__subject">Hello World!</p>
+                <p className="card__subject">Skills of</p>
+                <p className="card__subject">Mine</p>
               </div>
             </div>
           </div>

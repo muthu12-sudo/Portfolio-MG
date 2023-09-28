@@ -2,7 +2,7 @@ import MGImg from "/Mg-Img.jpg";
 export default function Profile() {
   return (
     <>
-      <div className="Profile">
+      <div className="Profile ">
         {" "}
         <div id="mgimg">
           <img src={MGImg} width="300px" />
