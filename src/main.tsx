@@ -13,9 +13,9 @@ const skills = [
   "Python",
   "HTML, CSS & Bootstrap",
   "Javascript with React",
+  "PHP & MySQL",
   "MS Office",
   "Photoshop",
-  "PHP & MySQL",
 ];
 
 const acheivements = [
