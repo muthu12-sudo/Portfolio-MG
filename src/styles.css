@@ -199,12 +199,12 @@ html {
   #mgimg {
     margin: 20px auto;
     width: 100%;
-    height: 600px;
+    height: 500px;
   }
 }
 @media (max-width: 530px) {
   #mgimg {
-    height: 400px;
+    height: 300px;
   }
 }
 @media (max-width: 430px) {

@@ -56,7 +56,8 @@ html {
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
 }
 .card__side--front {
-  background: url("/Cartoon-MG.png") no-repeat center;
+  background: no-repeat center;
+  background-size: 300px;
 }
 .card__side--back {
   background-color: #fff;
@@ -128,7 +129,7 @@ html {
 .card__details {
   font-family: "Inconsolata", monospace;
   padding: 4rem 2rem;
-  background: url("/Ok.png") no-repeat;
+  background: no-repeat;
   background-size: 200px;
 
   background-position: right;
