@@ -75,13 +75,14 @@ html {
   top: 58%;
   width: 95%;
 }
+
 .card__theme-box {
   color: #fff;
   display: flex;
-  justify-content: space-evenly;
-  align-items: baseline;
-  flex-flow: row wrap;
-  gap: 200px;
+  justify-content: center;
+  align-items: center;
+  gap: 40%;
+  flex-flow: row nowrap;
 }
 .card__subject {
   font-family: "Inconsolata", monospace;
@@ -146,7 +147,11 @@ html {
 .card__details ul li:last-child {
   border-bottom: none;
 }
-
+@media only screen and (max-width: 950px) {
+  .card__side--front {
+    background-size: 250px;
+  }
+}
 @media only screen and (max-width: 650px) {
   .card__details {
     background-size: 100px;
@@ -154,5 +159,12 @@ html {
   }
   .card__side--front {
     background-size: 200px;
+  }
+  .card__theme-box {
+    flex-flow: column wrap;
+    row-gap: 280px;
+  }
+  .card__theme-box :first-child {
+    margin-top: -50px;
   }
 }
