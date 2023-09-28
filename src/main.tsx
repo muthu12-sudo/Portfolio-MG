@@ -21,7 +21,6 @@ const skills = [
 const acheivements = [
   "Graphic Designing Internship",
   "Intelligent Game Designing Course",
-  "Certificate of Appreciation for College Website",
   "Machine Learning with Python Course",
   "C Course - Sololearn",
   "MS Office Course Certificate",

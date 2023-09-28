@@ -19,7 +19,7 @@ html {
 
 .artboard {
   display: flex;
-  z-index: 1;
+  z-index: 2;
   flex-flow: row;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,7 @@ html {
 .card {
   flex: initial;
   position: relative;
-  height: 52rem;
+  height: auto;
   width: 100rem;
   -moz-perspective: 200rem;
   perspective: 200rem;
@@ -58,9 +58,13 @@ html {
 .card__side--front {
   background: no-repeat center;
   background-size: 300px;
+  height: -webkit-fill-available;
 }
 .card__side--back {
   background-color: #fff;
+  z-index: 1;
+  height: auto;
+  position: relative;
   transform: rotateY(180deg);
 }
 .card:hover .card__side--back {
@@ -131,7 +135,6 @@ html {
   padding: 4rem 2rem;
   background: no-repeat;
   background-size: 200px;
-
   background-position: right;
 }
 .card__details ul {
@@ -152,6 +155,9 @@ html {
   .card__side--front {
     background-size: 250px;
   }
+  .card__heading-span {
+    font-size: 3.2rem;
+  }
 }
 @media only screen and (max-width: 650px) {
   .card__details {
@@ -167,5 +173,8 @@ html {
   }
   .card__theme-box :first-child {
     margin-top: -50px;
+  }
+  .card__heading-span {
+    font-size: 2.6rem;
   }
 }
