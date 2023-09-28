@@ -26,8 +26,8 @@ export default function Skills() {
           <div className="card__side card__side--front">
             <div className="card__theme">
               <div className="card__theme-box">
-                <p className="card__subject">Skills of</p>
-                <p className="card__subject">Mine</p>
+                <p className="card__subject">technical</p>
+                <p className="card__subject"> skills</p>
               </div>
             </div>
           </div>
