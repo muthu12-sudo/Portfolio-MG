@@ -56,9 +56,9 @@ html {
 }
 .NavbarContainer hr {
   margin: 0;
-  color: #f207f2;
-  opacity: 70%;
-  border-width: 2px;
+  color: gold;
+  opacity: 90%;
+  border-width: 2.5px;
 }
 
 .Navbar {
@@ -66,8 +66,13 @@ html {
   gap: 30px;
   padding: 25px;
   margin: 0;
-  background-image: linear-gradient(to bottom, #2afadf 10%, #4c83ff 90%);
-  opacity: 92%;
+  background-image: linear-gradient(
+    -225deg,
+    #a445b2 0%,
+    #d41872 52%,
+    #ff0066 100%
+  );
+  opacity: 96%;
   width: 100%;
   overflow: hidden;
   align-items: baseline;
@@ -86,7 +91,7 @@ html {
   color: #fff;
 }
 .Navbar :first-child:hover {
-  text-shadow: #f207f2 0px 0px 20px;
+  text-shadow: gold 0px 0px 20px;
 }
 .Navbar button:hover {
   box-shadow: #333 1px 1px 4px;
@@ -131,12 +136,13 @@ html {
   display: flex;
   flex-flow: row nowrap;
   overflow: hidden;
+  justify-content: space-around;
   padding-top: 20px;
 }
 
 #mgimg {
   margin: 10px;
-  width: 20%;
+  width: 25%;
   max-width: fit-content;
   overflow: hidden;
   border-radius: 5px;
@@ -161,10 +167,15 @@ html {
   -moz-box-shadow: 0px 0px 2px 3px rgba(82, 82, 82, 0.75);
 }
 .ProfileContainer {
-  width: 75%;
+  width: 70%;
   max-width: fit-content;
   padding: 20px;
-  background: rgba(255, 71, 46, 0.8);
+  background-image: linear-gradient(
+    -225deg,
+    #7742b2 0%,
+    #f180ff 52%,
+    #fd8bd9 100%
+  );
   border-radius: 5px;
   margin: 10px;
   display: flex;
@@ -173,7 +184,7 @@ html {
 }
 .ProfileContainer p {
   font-family: "Alice";
-  font-size: 20px;
+  font-size: 22px;
   word-spacing: 3px;
   margin-top: 40px;
   text-shadow: #01030f 1px 1px 1px;
@@ -182,7 +193,7 @@ html {
 }
 .ProfileContainer h1 {
   font-family: "Josefin Slab";
-  margin-top: 30px;
+  margin-top: 34px;
   color: #fff;
   text-shadow: #01030f 1px 1px 1px;
   font-size: 35px;
@@ -200,7 +211,7 @@ html {
     width: 90%;
   }
   .ProfileContainer p {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 20px;
   }
   #mgimg {
@@ -220,5 +231,8 @@ html {
   }
   .ProfileContainer p {
     font-size: 18px;
+  }
+  .ProfileContainer h1 {
+    font-size: 28px;
   }
 }

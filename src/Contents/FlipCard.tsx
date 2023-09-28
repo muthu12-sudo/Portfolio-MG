@@ -16,7 +16,7 @@ export default function Skills(props: Props) {
           <div className="card__side card__side--back">
             <div
               className="card__cover"
-              style={{ backgroundColor: `rgb(${props.backColor})` }}>
+              style={{ background: `linear-gradient(${props.backColor})` }}>
               <h4 className="card__heading">
                 <span className="card__heading-span">
                   {props.cardDetailHeading}

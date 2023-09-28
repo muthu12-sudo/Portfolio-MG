@@ -45,7 +45,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       list={acheivements}
       frontImage={Acheive}
       backImage={Acheive}
-      backColor={"255,67,54"}
+      backColor={"to right, #f9d423 0%, #ff4e50 100%"}
     />
     <ErrorPage />
   </React.StrictMode>
