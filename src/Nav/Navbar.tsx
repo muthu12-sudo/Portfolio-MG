@@ -27,7 +27,6 @@ export default function Navbar() {
         <div className="Navbar">
           <h1>Muthuganesh R</h1>
           <span>Fresher</span>
-          <span>Web developer</span>
         </div>
         <hr style={{ width: navbarWidth }} />
       </div>
