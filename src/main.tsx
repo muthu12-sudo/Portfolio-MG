@@ -7,6 +7,7 @@ import Profile from "./Contents/Profile.tsx";
 import FlipCard from "./Contents/FlipCard.tsx";
 import Skill from "/Ok.png";
 import Acheive from "/Acheive.png";
+import Footer from "./Contents/Footer.tsx";
 
 const skills = [
   "Java",
@@ -32,8 +33,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <Navbar type="Contact Me" />
     <Profile />
     <FlipCard
-      cardHeading1={"technical"}
-      cardHeading2={"skills"}
+      cardHeading1={"Technical"}
+      cardHeading2={"Skills"}
       cardDetailHeading={"Skill Set"}
       list={skills}
       frontImage={Skill}
@@ -49,5 +50,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       backColor={"to right, #f9d423 0%, #ff4e50 100%"}
     />
     <ErrorPage />
+    <Footer />
   </React.StrictMode>
 );

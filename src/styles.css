@@ -27,17 +27,12 @@ html {
 ::-ms-scrollbar-thumb {
   background: #64616e;
 }
-/* Navbar */
 @font-face {
   font-family: "Note";
   src: url("./fonts/Note.ttf");
   font-display: swap;
 }
-@font-face {
-  font-family: "Berolina";
-  src: url("./fonts/Berolina.ttf");
-  font-display: swap;
-}
+
 @font-face {
   font-family: "Alice";
   src: url("./fonts/Alice.ttf");
@@ -49,6 +44,13 @@ html {
   font-display: swap;
   src: url("./fonts/Slab.woff2") format("woff2");
 }
+@font-face {
+  font-family: "Berolina";
+  font-display: swap;
+  src: url("./fonts/Berolina.ttf");
+}
+
+/* Navbar */
 .NavbarContainer {
   position: sticky;
   top: 0px;
@@ -90,14 +92,14 @@ html {
   transition: all ease-in-out 0.2s;
   color: #fff;
 }
-.Navbar :first-child:hover {
+.Navbar:not(.Footer) :first-child:hover {
   text-shadow: gold 0px 0px 20px;
 }
 .Navbar button:hover {
   box-shadow: #333 1px 1px 4px;
 }
 
-.Navbar :first-child {
+.Navbar:not(.Footer) :first-child {
   margin-right: auto;
   text-shadow: #01030f 1px 1px 1px;
   font-size: 40px;
@@ -117,6 +119,9 @@ html {
   .Navbar :first-child {
     font-size: 36px;
   }
+  .Navbar.Footer h5 {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 568px) {
@@ -128,6 +133,9 @@ html {
   }
   .Navbar :first-child {
     font-size: 32px;
+  }
+  .Navbar.Footer h5 {
+    font-size: 1px;
   }
 }
 
@@ -234,5 +242,36 @@ html {
   }
   .ProfileContainer h1 {
     font-size: 28px;
+  }
+}
+
+/* Footer */
+.Navbar.Footer {
+  background-image: linear-gradient(
+    225deg,
+    #a445b2 0%,
+    #d41872 52%,
+    #ff0066 100%
+  );
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+  font-family: "Alice";
+}
+.Navbar.Footer h5 {
+  line-height: 30px;
+  color: #fff;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .Navbar.Footer h5 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 568px) {
+  .Navbar.Footer h5 {
+    font-size: 16px;
   }
 }
