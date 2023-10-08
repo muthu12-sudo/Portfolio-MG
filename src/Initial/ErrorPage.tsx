@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./style.css";
-import reactlogo from "/react.gif";
 import cartoonmg from "/Cartoon-MG.png";
 import nomeme from "/nomeme.png";
 import { FcCloseUpMode, FcSupport } from "react-icons/fc";
@@ -15,12 +14,10 @@ function ErrorPage() {
   return (
     <>
       <div className="Error">
-        <img src={reactlogo} width="40px" alt="React Logo" />
-        <h1>Welcome, All!</h1>
         <div className="container">
           <div className="bubble">
             <p>
-              Currently, this&nbsp; site is under construction <FcSupport />
+              Currently, The site is under construction <FcSupport />
             </p>
           </div>
         </div>
@@ -32,7 +29,7 @@ function ErrorPage() {
           alt={flag ? "Cartoon Image" : "No Meme"}
         />
         <h2 className="d-flex justify-content-center">
-          Personal Portfolio for Me&nbsp; <FcCloseUpMode />
+          Until we meet again&nbsp; <FcCloseUpMode />
         </h2>
         <br />
         <button onClick={changeImg}>Bye</button>
