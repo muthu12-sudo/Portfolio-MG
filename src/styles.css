@@ -131,7 +131,7 @@ html {
   .Navbar button {
     font-size: 20px;
   }
-  .Navbar :first-child {
+  .Navbar:not(.Footer) :first-child {
     font-size: 32px;
   }
   .Navbar.Footer h5 {

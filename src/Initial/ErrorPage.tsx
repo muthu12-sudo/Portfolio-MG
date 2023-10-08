@@ -20,7 +20,7 @@ function ErrorPage() {
         <div className="container">
           <div className="bubble">
             <p>
-              Currently, this&nbsp; site is under construction <FcSupport />.
+              Currently, this&nbsp; site is under construction <FcSupport />
             </p>
           </div>
         </div>
@@ -32,7 +32,7 @@ function ErrorPage() {
           alt={flag ? "Cartoon Image" : "No Meme"}
         />
         <h2 className="d-flex justify-content-center">
-          Personal Portfolio for Me&nbsp; <FcCloseUpMode />.
+          Personal Portfolio for Me&nbsp; <FcCloseUpMode />
         </h2>
         <br />
         <button onClick={changeImg}>Bye</button>
