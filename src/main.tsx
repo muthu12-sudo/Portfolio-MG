@@ -10,20 +10,21 @@ import Acheive from "/Acheive.png";
 
 const skills = [
   "Java",
-  "Python",
+  "Python, Django",
   "HTML, CSS & Bootstrap",
-  "Javascript with React",
+  "Typescript, React JS",
+  "Unity Game Engine",
   "PHP & MySQL",
   "MS Office",
   "Photoshop",
 ];
 
 const acheivements = [
-  "Graphic Designing Internship",
-  "Intelligent Game Designing Course",
   "Machine Learning with Python Course",
-  "C Course - Sololearn",
+  "Graphic Designing Internship",
   "MS Office Course Certificate",
+  "C Course - Sololearn",
+  "Intelligent Game Designing Course",
 ];
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
