@@ -521,10 +521,18 @@ html {
 
 .contact-item:hover {
   background: linear-gradient(-225deg, #a445b2 0%, #d41872 52%, #ff0066 100%);
-  color: white;
+  color: white !important;
   border-color: transparent;
   transform: translateX(5px);
   box-shadow: 0 4px 12px rgba(212, 24, 114, 0.3);
+}
+
+.contact-item:hover span {
+  color: white !important;
+}
+
+.contact-item:hover .contact-icon {
+  color: white !important;
 }
 
 .contact-icon {

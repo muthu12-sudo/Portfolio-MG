@@ -56,11 +56,11 @@ export default function Navbar(props: NavbarProps) {
                 <FaPhone className="contact-icon" />
                 <span>9688241253</span>
               </a>
-              <a href="https://github.com/muthu12-sudo" target="_blank" rel="noopener noreferrer" className="contact-item">
+              <a href="https://github.com/muthu12-sudo" target="_blank" className="contact-item">
                 <FaGithub className="contact-icon" />
                 <span>github.com/muthu12-sudo</span>
               </a>
-              <a href="https://linkedin.com/in/muthuganesh-r" target="_blank" rel="noopener noreferrer" className="contact-item">
+              <a href="https://www.linkedin.com/in/muthuganesh-r-32b2031b5" target="_blank"  className="contact-item">
                 <FaLinkedin className="contact-icon" />
                 <span>LinkedIn Profile</span>
               </a>
