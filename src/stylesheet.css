@@ -26,10 +26,12 @@ html {
   padding: 4rem;
   height: 100%;
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 @media (max-width: 37.5em) {
   .artboard {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 }
 
@@ -37,10 +39,12 @@ html {
   flex: initial;
   position: relative;
   height: auto;
-  width: 100rem;
+  width: min(100rem, 90vw);
+  max-width: 90vw;
   -moz-perspective: 200rem;
   perspective: 200rem;
   margin: 2rem;
+  box-sizing: border-box;
 }
 .card__side {
   height: 52rem;
@@ -63,9 +67,11 @@ html {
 .card__side--back {
   background-color: #fff;
   z-index: 1;
-  height: auto;
+  height: 100%;
   position: relative;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
 }
 .card:hover .card__side--back {
   transform: rotateY(0);
@@ -137,23 +143,34 @@ html {
 }
 .card__details {
   font-family: "Inconsolata", monospace;
-  padding: 4rem 2rem;
+  padding: 2rem 1.5rem;
   background: no-repeat;
-  background-size: 200px;
-  background-position: right;
+  background-size: 150px;
+  background-position: bottom right;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 .card__details ul {
   list-style: none;
-  width: 80%;
+  width: 100%;
   position: relative;
-  z-index: -1;
-  margin: 0 auto;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  min-height: 0;
+  flex-shrink: 1;
+  overflow-y: auto;
 }
 .card__details ul li {
   text-align: center;
   font-size: 1.8rem;
-  padding: 1rem;
+  padding: 0.6rem 0.3rem;
   border-bottom: 1px solid #eee;
+  line-height: 1.2;
+  word-wrap: break-word;
 }
 .card__details ul li:last-child {
   border-bottom: none;
@@ -166,10 +183,20 @@ html {
     font-size: 3.2rem;
   }
 }
+@media only screen and (max-width: 800px) {
+  .card {
+    width: min(80rem, 85vw);
+    margin: 1.5rem 0.5rem;
+  }
+  .card__side {
+    height: 45rem;
+  }
+}
 @media only screen and (max-width: 650px) {
   .card__details {
-    background-size: 100px;
-    background-position: right bottom;
+    background-size: 160px;
+    background-position: center bottom;
+    padding: 1rem 0.8rem;
   }
 
   .card__side--front {
@@ -184,5 +211,77 @@ html {
   }
   .card__heading-span {
     font-size: 2.6rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    width: min(60rem, 90vw);
+    margin: 1rem 0.5rem;
+  }
+  .card__side {
+    height: 50rem;
+  }
+  .card__details {
+    padding: 1rem 0.8rem;
+    background-size: 140px;
+    background-position: center bottom;
+  }
+  .card__details ul li {
+    font-size: 1.3rem;
+    padding: 0.5rem 0.3rem;
+    line-height: 1.15;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .card {
+    width: min(50rem, 95vw);
+    margin: 0.8rem 0;
+  }
+  .card__side {
+    height: 48rem;
+  }
+  .card__details {
+    padding: 0.8rem 0.6rem;
+    background-size: 130px;
+    background-position: center bottom;
+  }
+  .card__details ul li {
+    font-size: 1.15rem;
+    padding: 0.4rem 0.3rem;
+    line-height: 1.1;
+  }
+  .card__subject {
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+  }
+  .card__heading-span {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .card {
+    width: 95vw;
+    margin: 0.8rem auto;
+  }
+  .card__side {
+    height: 45rem;
+  }
+  .card__details {
+    padding: 0.6rem 0.5rem;
+    background-size: 120px;
+    background-position: center bottom;
+  }
+  .card__details ul li {
+    font-size: 1rem;
+    padding: 0.4rem 0.2rem;
+    line-height: 1.05;
+    border-bottom: 0.5px solid #eee;
+  }
+  .card__subject {
+    font-size: 1.7rem;
+    letter-spacing: 0.3rem;
+  }
+  .card__heading-span {
+    font-size: 1.7rem;
   }
 }

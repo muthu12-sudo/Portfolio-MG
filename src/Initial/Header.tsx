@@ -1,36 +1,23 @@
-import { useState } from "react";
 import "./style.css";
-import reactlogo from "/react.gif";
-import cartoonmg from "/Cartoon-MG.png";
-import nomeme from "/nomeme.png";
+import Pose from "/Header_Image.png";
 
 function Header() {
-  const [flag, isImage] = useState(true);
-
-  const changeImg = () => {
-    isImage((prevState) => !prevState);
-  };
-
   return (
     <>
       <div className="header">
-        <img src={reactlogo} width="40px" alt="React Logo" />
-        <h1>Welcome, All!</h1>
+        <h1>Welcome to My Portfolio</h1>
         <div className="container">
           <div className="bubble">
-            <p>Currently, this&nbsp; site is under construction</p>
+            <p>Explore my journey as a Gen AI Developer</p>
           </div>
         </div>
         <img
           id="mg"
-          src={flag ? cartoonmg : nomeme}
+          src={Pose}
           width={350}
-          height={flag ? "" : 444}
-          alt={flag ? "Cartoon Image" : "No Meme"}
+          alt="Cartoon Image"
         />
-        <h2>Personal Portfolio for Me &#128521;.</h2>
-        <br />
-        <button onClick={changeImg}>Bye</button>
+        <h2>Personal Portfolio of Muthuganesh R &#128521;</h2>
       </div>
     </>
   );
