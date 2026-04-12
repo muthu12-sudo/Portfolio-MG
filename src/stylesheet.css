@@ -198,7 +198,11 @@ html {
     background-position: center bottom;
     padding: 1rem 0.8rem;
   }
-
+  .card__details ul li {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.3rem;
+    line-height: 1.0;
+  }
   .card__side--front {
     background-size: 200px;
   }
@@ -227,9 +231,9 @@ html {
     background-position: center bottom;
   }
   .card__details ul li {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     padding: 0.5rem 0.3rem;
-    line-height: 1.15;
+    line-height: 1.5;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -246,9 +250,9 @@ html {
     background-position: center bottom;
   }
   .card__details ul li {
-    font-size: 1.15rem;
+    font-size: 1.4rem;
     padding: 0.4rem 0.3rem;
-    line-height: 1.1;
+    line-height: 1.5;
   }
   .card__subject {
     font-size: 2rem;
@@ -272,9 +276,9 @@ html {
     background-position: center bottom;
   }
   .card__details ul li {
-    font-size: 1rem;
+    font-size: 1.2em;
     padding: 0.4rem 0.2rem;
-    line-height: 1.05;
+    line-height: 1.5;
     border-bottom: 0.5px solid #eee;
   }
   .card__subject {
