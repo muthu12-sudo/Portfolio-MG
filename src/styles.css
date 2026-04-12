@@ -437,3 +437,118 @@ html {
     font-size: 16px;
   }
 }
+
+/* Contact Modal */
+.contact-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.contact-modal {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease-out;
+  position: relative;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.contact-modal h2 {
+  font-family: "Josefin Slab", serif;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.contact-modal .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.contact-modal .close-btn:hover {
+  color: #333;
+}
+
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #2c3e50;
+  background: #f5f6fa;
+  transition: all 0.3s ease;
+  border: 1px solid #e0e3e8;
+  font-family: "Alice", serif;
+  font-size: 14px;
+}
+
+.contact-item:hover {
+  background: linear-gradient(-225deg, #a445b2 0%, #d41872 52%, #ff0066 100%);
+  color: white;
+  border-color: transparent;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(212, 24, 114, 0.3);
+}
+
+.contact-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 500px) {
+  .contact-modal {
+    padding: 30px 20px;
+  }
+
+  .contact-modal h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contact-item {
+    font-size: 13px;
+    padding: 10px 12px;
+    gap: 12px;
+  }
+
+  .contact-icon {
+    font-size: 18px;
+  }
+}
