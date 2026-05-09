@@ -9,6 +9,7 @@ import Skill from "/Ok.png";
 import Education from "/Education.png";
 import Acheive from "/Acheive.png";
 import Footer from "./Contents/Footer.tsx";
+import Chatbot from "./Contents/Chatbot.tsx";
 
 const acheivements = [
   "Machine Learning with Python Course",
@@ -64,5 +65,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       backColor={"to right, #f9d423 0%, #ff4e50 100%"}
     />
     <Footer />
+    <Chatbot />
   </React.StrictMode>
 );

@@ -1,0 +1,67 @@
+{
+  "owner": {
+    "name": "Muthuganesh R",
+    "title": "Master's Student in Computer Applications | AI/ML Enthusiast",
+    "email": "muthuganesh2205@gmail.com",
+    "phone": "+91 9688241253",
+    "location": "India"
+  },
+  "bio": "I'm an accomplished tech professional pursuing a Master's degree in Computer Applications at SRM University with a strong focus on AI, ML, and Software Development. I'm passionate about leveraging cutting-edge technologies to solve real-world problems.",
+  "education": {
+    "current": {
+      "institution": "SRM University of Science and Technology",
+      "degree": "Masters in Computer Applications (MCA)",
+      "duration": "October 2023 - May 2025",
+      "cgpa": "8.6/10",
+      "focus": ["Artificial Intelligence and Machine Learning", "Software Development", "Advanced Programming Concepts"]
+    }
+  },
+  "expertise": {
+    "Generative AI & LLMs": [
+      "Expert in LangChain framework",
+      "Proficient with LlamaIndex implementation",
+      "Advanced Prompt Engineering & optimization",
+      "Experience with state-of-the-art language models",
+      "RAG (Retrieval-Augmented Generation) systems"
+    ],
+    "Programming Languages": [
+      "Python - Advanced",
+      "Java - Proficient",
+      "JavaScript/TypeScript - Advanced",
+      "C++ - Intermediate",
+      "SQL - Proficient"
+    ],
+    "AI/ML Technologies": [
+      "TensorFlow & PyTorch",
+      "Scikit-learn",
+      "OpenAI API, Google AI API",
+      "Computer Vision",
+      "Natural Language Processing"
+    ],
+    "Web Development": [
+      "React - Advanced",
+      "Node.js - Advanced",
+      "Express.js",
+      "Vite",
+      "Full-stack development"
+    ],
+    "Tools & Platforms": [
+      "Git & GitHub",
+      "Docker",
+      "AWS",
+      "VS Code",
+      "Jupyter Notebooks"
+    ]
+  },
+  "contact": {
+    "email": "muthuganesh2205@gmail.com",
+    "phone": "+91 9688241253",
+    "github": "https://github.com/muthu12-sudo",
+    "linkedin": "https://www.linkedin.com/in/muthuganesh-r-32b2031b5"
+  },
+  "personality": {
+    "communication_style": "Friendly, professional, and conversational",
+    "availability": "Available for collaboration and opportunities",
+    "interests": "AI, Machine Learning, Software Development, Open Source Contribution"
+  }
+}

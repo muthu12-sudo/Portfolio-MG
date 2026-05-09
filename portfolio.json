@@ -1,0 +1,80 @@
+{
+  "name": "Muthuganesh R",
+  "title": "Master's Student in Computer Applications | AI/ML Enthusiast",
+  "summary": "I'm an accomplished tech professional and student at SRM University pursuing a Master's degree in Computer Applications with a strong focus on AI, ML, and Software Development.",
+
+  "education": {
+    "institution": "SRM University of Science and Technology",
+    "degree": "Masters in Computer Applications (MCA)",
+    "startDate": "October 2023",
+    "endDate": "May 2025",
+    "cgpa": "8.6/10",
+    "focus": [
+      "Artificial Intelligence and Machine Learning",
+      "Software Development",
+      "Advanced Programming Concepts"
+    ]
+  },
+
+  "contact": {
+    "email": "muthuganesh2205@gmail.com",
+    "phone": "+91 9688241253",
+    "github": "github.com/muthu12-sudo",
+    "linkedin": "linkedin.com/in/muthuganesh-r-32b2031b5"
+  },
+
+  "skills": {
+    "generativeAI": {
+      "title": "Generative AI & LLMs",
+      "skills": [
+        "LangChain framework expertise",
+        "LlamaIndex implementation",
+        "Prompt Engineering & optimization",
+        "Working with advanced language models"
+      ]
+    },
+    "programming": {
+      "title": "Programming & Development",
+      "skills": [
+        "Languages: Python, Java, JavaScript/Web Development",
+        "Full-stack development capabilities",
+        "Clean code practices"
+      ]
+    },
+    "gis": {
+      "title": "GIS & Geo-Spatial AI",
+      "skills": [
+        "Spatial Data Analysis",
+        "Geospatial AI Solutions",
+        "Location-based intelligent systems"
+      ]
+    },
+    "leadership": {
+      "title": "Leadership & Management",
+      "skills": [
+        "Team leading experience",
+        "Hackathon participation and wins",
+        "Project management",
+        "Collaboration and mentoring"
+      ]
+    }
+  },
+
+  "achievements": [
+    "Machine Learning with Python - Professional certification",
+    "Graphic Designing Internship - Hands-on design experience",
+    "MS Office Suite Certification - Professional productivity",
+    "C Programming Course Certification - Sololearn",
+    "Intelligent Game Designing Course - Creative development"
+  ],
+
+  "strengths": [
+    "Strong foundation in AI/ML technologies",
+    "Proficient in multiple programming languages",
+    "Experience with cutting-edge technologies (LLMs, Generative AI)",
+    "Leadership and team management skills",
+    "Creative problem-solving abilities",
+    "Full-stack development capabilities",
+    "Geospatial technology expertise"
+  ]
+}
