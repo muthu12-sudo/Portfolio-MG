@@ -228,7 +228,12 @@ export default function Chatbot() {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/chat", {
+      // Use full Vercel URL for production, relative path for development
+      const apiUrl = typeof window !== 'undefined' && window.location.hostname.includes('github.io')
+        ? 'https://portfolio-mg-main.vercel.app/api/chat'
+        : '/api/chat';
+
+      const response = await fetch(apiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
