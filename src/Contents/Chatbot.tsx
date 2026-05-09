@@ -2,6 +2,14 @@ import { useState, useRef, useEffect } from "react";
 import { FaRobot, FaTimes, FaMicrophone, FaPaperPlane } from "react-icons/fa";
 import "../styles/Chatbot.css";
 
+// Type declarations for Web Speech API
+declare global {
+  interface Window {
+    SpeechRecognition: any;
+    webkitSpeechRecognition: any;
+  }
+}
+
 interface Message {
   role: "user" | "assistant";
   content: string;
@@ -162,7 +170,7 @@ export default function Chatbot() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const SpeechRecognition =
-        window.SpeechRecognition || (window as any).webkitSpeechRecognition;
+        (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
       if (SpeechRecognition) {
         recognitionRef.current = new SpeechRecognition();
         recognitionRef.current.continuous = false;
