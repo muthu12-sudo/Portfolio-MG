@@ -61,6 +61,19 @@ export default async function handler(
       return res.status(400).json({ error: 'Messages array is required' });
     }
 
+    // Check if user is asking for resume/CV
+    const lastMessage = messages[messages.length - 1];
+    const userQuery = lastMessage?.content?.toLowerCase() || '';
+    const isResumeRequest = /\b(resume|cv|curriculum\s*vitae|download\s*resume|download\s*cv|my\s*resume|my\s*cv)\b/.test(userQuery);
+
+    if (isResumeRequest) {
+      return res.status(200).json({
+        content: `Sure! Here's my resume/CV: [Download my Resume](src/assets/gen-ai-developer.pdf)
+
+You can also download it directly by clicking the link above. Feel free to ask me any questions about my experience, skills, or projects!`,
+      });
+    }
+
     // Get bio data
     const userBioData = await getAgentBioData();
 

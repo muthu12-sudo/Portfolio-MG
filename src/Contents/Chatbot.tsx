@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { FaRobot, FaTimes, FaMicrophone, FaPaperPlane } from "react-icons/fa";
+import { FaRobot, FaTimes, FaMicrophone, FaPaperPlane, FaVolumeMute, FaVolumeUp } from "react-icons/fa";
 import "../styles/Chatbot.css";
 
 // Type declarations for Web Speech API
@@ -160,6 +160,7 @@ export default function Chatbot() {
   const [inputValue, setInputValue] = useState("");
   const [loading, setLoading] = useState(false);
   const [isListening, setIsListening] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const recognitionRef = useRef<any>(null);
 
@@ -208,6 +209,7 @@ export default function Chatbot() {
   };
 
   const speak = (text: string) => {
+    if (isMuted) return;
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.rate = 1;
     utterance.pitch = 1;
@@ -306,6 +308,15 @@ export default function Chatbot() {
                 <div className="message-content">
                   {parseMarkdown(msg.content)}
                 </div>
+                {msg.role === "assistant" && (
+                  <button
+                    className="mute-button"
+                    onClick={() => setIsMuted(!isMuted)}
+                    title={isMuted ? "Unmute read aloud" : "Mute read aloud"}
+                  >
+                    {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
+                  </button>
+                )}
               </div>
             ))}
             {loading && (
