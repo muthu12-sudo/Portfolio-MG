@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { FaRobot, FaTimes, FaMicrophone, FaPaperPlane, FaVolumeMute, FaVolumeUp } from "react-icons/fa";
+import { FaRobot, FaTimes, FaMicrophone, FaPaperPlane } from "react-icons/fa";
 import "../styles/Chatbot.css";
 
 // Type declarations for Web Speech API
@@ -128,13 +128,14 @@ const parseInlineMarkdown = (text: string) => {
     if (linkMatch) {
       const href = linkMatch[2];
       const isPdf = href.endsWith('.pdf');
+      const downloadName = isPdf ? 'gen-ai-developer.pdf' : undefined;
       parts.push(
         <a 
           key={key++} 
           href={href} 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          download={isPdf}
+          target={isPdf ? undefined : "_blank"}
+          rel={isPdf ? undefined : "noopener noreferrer"}
+          download={downloadName}
           style={{color: '#0056b3', textDecoration: 'underline'}}
         >
           {linkMatch[1]}
@@ -169,7 +170,6 @@ export default function Chatbot() {
   const [inputValue, setInputValue] = useState("");
   const [loading, setLoading] = useState(false);
   const [isListening, setIsListening] = useState(false);
-  const [isMuted, setIsMuted] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const recognitionRef = useRef<any>(null);
 
@@ -214,29 +214,6 @@ export default function Chatbot() {
   const stopListening = () => {
     if (recognitionRef.current) {
       recognitionRef.current.abort();
-    }
-  };
-
-  const speak = (text: string) => {
-    if (isMuted) return;
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.rate = 1;
-    utterance.pitch = 1;
-    utterance.volume = 1;
-    window.speechSynthesis.speak(utterance);
-  };
-
-  const handleMuteToggle = (messageContent: string) => {
-    const newMutedState = !isMuted;
-    setIsMuted(newMutedState);
-    
-    // If unmuting, speak the message
-    if (newMutedState === false) {
-      const utterance = new SpeechSynthesisUtterance(messageContent);
-      utterance.rate = 1;
-      utterance.pitch = 1;
-      utterance.volume = 1;
-      window.speechSynthesis.speak(utterance);
     }
   };
 
@@ -286,7 +263,6 @@ export default function Chatbot() {
       };
 
       setMessages((prev) => [...prev, assistantMessage]);
-      speak(data.content);
     } catch (error) {
       console.error("Error:", error);
       const errorMessage: Message = {
@@ -338,15 +314,6 @@ export default function Chatbot() {
                 <div className="message-content">
                   {parseMarkdown(msg.content)}
                 </div>
-                {msg.role === "assistant" && (
-                  <button
-                    className="mute-button"
-                    onClick={() => handleMuteToggle(msg.content)}
-                    title={isMuted ? "Unmute read aloud" : "Mute read aloud"}
-                  >
-                    {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
-                  </button>
-                )}
               </div>
             ))}
             {loading && (
