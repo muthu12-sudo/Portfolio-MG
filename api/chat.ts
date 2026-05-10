@@ -68,7 +68,7 @@ export default async function handler(
 
     if (isResumeRequest) {
       return res.status(200).json({
-        content: `Sure! Here's my resume/CV: [Download my Resume](src/assets/gen-ai-developer.pdf)
+        content: `Sure! Here's my resume/CV: [Download my Resume](/Portfolio-MG/gen-ai-developer.pdf)
 
 You can also download it directly by clicking the link above. Feel free to ask me any questions about my experience, skills, or projects!`,
       });

@@ -126,8 +126,17 @@ const parseInlineMarkdown = (text: string) => {
     // Links [text](url)
     const linkMatch = remaining.match(/^\[(.*?)\]\((.*?)\)/);
     if (linkMatch) {
+      const href = linkMatch[2];
+      const isPdf = href.endsWith('.pdf');
       parts.push(
-        <a key={key++} href={linkMatch[2]} target="_blank" rel="noopener noreferrer" style={{color: '#0056b3', textDecoration: 'underline'}}>
+        <a 
+          key={key++} 
+          href={href} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          download={isPdf}
+          style={{color: '#0056b3', textDecoration: 'underline'}}
+        >
           {linkMatch[1]}
         </a>
       );
@@ -217,6 +226,20 @@ export default function Chatbot() {
     window.speechSynthesis.speak(utterance);
   };
 
+  const handleMuteToggle = (messageContent: string) => {
+    const newMutedState = !isMuted;
+    setIsMuted(newMutedState);
+    
+    // If unmuting, speak the message
+    if (newMutedState === false) {
+      const utterance = new SpeechSynthesisUtterance(messageContent);
+      utterance.rate = 1;
+      utterance.pitch = 1;
+      utterance.volume = 1;
+      window.speechSynthesis.speak(utterance);
+    }
+  };
+
   const sendMessage = async () => {
     if (!inputValue.trim()) return;
 
@@ -230,10 +253,17 @@ export default function Chatbot() {
     setLoading(true);
 
     try {
-      // Use full Vercel URL for production, relative path for development
-      const apiUrl = typeof window !== 'undefined' && window.location.hostname.includes('github.io')
-        ? 'https://portfolio-mg-main.vercel.app/api/chat'
-        : '/api/chat';
+      // Determine API URL based on environment
+      let apiUrl = '/api/chat';
+      
+      if (typeof window !== 'undefined') {
+        const hostname = window.location.hostname;
+        
+        // If deployed (github.io or custom domain that isn't localhost)
+        if (!hostname.includes('localhost') && !hostname.includes('127.0.0.1')) {
+          apiUrl = 'https://portfolio-mg-main.vercel.app/api/chat';
+        }
+      }
 
       const response = await fetch(apiUrl, {
         method: "POST",
@@ -311,7 +341,7 @@ export default function Chatbot() {
                 {msg.role === "assistant" && (
                   <button
                     className="mute-button"
-                    onClick={() => setIsMuted(!isMuted)}
+                    onClick={() => handleMuteToggle(msg.content)}
                     title={isMuted ? "Unmute read aloud" : "Mute read aloud"}
                   >
                     {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
