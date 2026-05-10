@@ -1,7 +1,7 @@
 {
   "name": "Muthuganesh R",
-  "title": "Master's Student in Computer Applications | AI/ML Enthusiast",
-  "summary": "I'm an accomplished tech professional and student at SRM University pursuing a Master's degree in Computer Applications with a strong focus on AI, ML, and Software Development.",
+  "title": "Gen AI Developer | Geo AI Specialist",
+  "summary": "Gen AI Developer with 2 years of experience at TCS, specializing in building Geo AI solutions. Skilled in Generative AI, Python, Prompt Engineering, and modern frameworks. Experienced in leading teams and delivering innovative AI solutions.",
 
   "education": {
     "institution": "SRM University of Science and Technology",
@@ -10,9 +10,9 @@
     "endDate": "May 2025",
     "cgpa": "8.6/10",
     "focus": [
-      "Artificial Intelligence and Machine Learning",
-      "Software Development",
-      "Advanced Programming Concepts"
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Software Development"
     ]
   },
 
@@ -20,25 +20,50 @@
     "email": "muthuganesh2205@gmail.com",
     "phone": "+91 9688241253",
     "github": "github.com/muthu12-sudo",
-    "linkedin": "linkedin.com/in/muthuganesh-r-32b2031b5"
+    "linkedin": "linkedin.com/in/muthuganesh-r-32b2031b5",
+    "location": "Tamilnadu, India"
+  },
+
+  "experience": {
+    "company": "TATA CONSULTANCY SERVICES",
+    "role": "GenAI Developer",
+    "duration": "November 2023 - Present",
+    "location": "Kochi, Kerala",
+    "highlights": [
+      "Developing and implementing Geo AI solutions leveraging Generative AI and spatial data analysis",
+      "Leading a team of developers on AI projects, ensuring timely and efficient delivery",
+      "Integrating GIS with Gen AI technologies for enterprise solutions",
+      "Applying LangChain, LlamaIndex, and other Gen AI frameworks",
+      "Contributing to AI-driven projects and internal innovation initiatives"
+    ]
   },
 
   "skills": {
     "generativeAI": {
       "title": "Generative AI & LLMs",
       "skills": [
-        "LangChain framework expertise",
-        "LlamaIndex implementation",
-        "Prompt Engineering & optimization",
-        "Working with advanced language models"
+        "Expert in LangChain framework",
+        "Proficient with LlamaIndex implementation",
+        "Advanced Prompt Engineering & optimization",
+        "RAG (Retrieval-Augmented Generation) systems"
       ]
     },
     "programming": {
       "title": "Programming & Development",
       "skills": [
-        "Languages: Python, Java, JavaScript/Web Development",
-        "Full-stack development capabilities",
-        "Clean code practices"
+        "Python (Advanced), Java (Proficient), C++ (Intermediate)",
+        "JavaScript/TypeScript (Advanced), SQL (Proficient)",
+        "React, Node.js, and Express.js",
+        "Full-stack development capabilities"
+      ]
+    },
+    "aiml": {
+      "title": "AI/ML Technologies",
+      "skills": [
+        "TensorFlow & PyTorch",
+        "Scikit-learn",
+        "OpenAI API, Google AI API",
+        "Computer Vision & NLP"
       ]
     },
     "gis": {
@@ -47,6 +72,14 @@
         "Spatial Data Analysis",
         "Geospatial AI Solutions",
         "Location-based intelligent systems"
+      ]
+    },
+    "tools": {
+      "title": "Tools & Platforms",
+      "skills": [
+        "Git & GitHub",
+        "Docker & AWS",
+        "VS Code & Jupyter Notebooks"
       ]
     },
     "leadership": {

@@ -1,137 +1,86 @@
 {
-  "personalInfo": {
+  "owner": {
     "name": "Muthuganesh R",
-    "title": "Master's Student in Computer Applications | AI/ML Enthusiast",
+    "title": "Gen AI Developer | Geo AI Specialist",
     "email": "muthuganesh2205@gmail.com",
     "phone": "+91 9688241253",
-    "location": "India"
+    "location": "Tamilnadu, India"
   },
-
-  "summary": "I'm an accomplished tech professional and student at SRM University pursuing a Master's degree in Computer Applications with a strong focus on AI, ML, and Software Development. I'm passionate about leveraging cutting-edge technologies to solve real-world problems and create innovative solutions.",
-
+  "bio": "Gen AI Developer with 2 years of experience at TCS, specializing in building Geo AI solutions. Skilled in Generative AI, Python, Prompt Engineering, and modern frameworks. Experienced in leading teams, participating in AI hackathons, and delivering innovative solutions.",
+  "experience": {
+    "current": {
+      "company": "TATA CONSULTANCY SERVICES",
+      "role": "GenAI Developer",
+      "duration": "November 2023 - Present",
+      "location": "Kochi, Kerala",
+      "highlights": [
+        "Developing and implementing Geo AI solutions leveraging Generative AI and spatial data analysis",
+        "Leading a team of developers on AI projects, ensuring timely and efficient delivery",
+        "Integrating GIS with Gen AI technologies for enterprise solutions",
+        "Applying LangChain, LlamaIndex, and other Gen AI frameworks",
+        "Contributing to AI-driven projects and internal innovation initiatives"
+      ]
+    }
+  },
   "education": {
     "current": {
       "institution": "SRM University of Science and Technology",
       "degree": "Masters in Computer Applications (MCA)",
-      "startDate": "October 2023",
-      "endDate": "May 2025",
+      "duration": "October 2023 - May 2025",
       "cgpa": "8.6/10",
       "focus": [
-        "Artificial Intelligence and Machine Learning",
-        "Software Development",
-        "Advanced Programming Concepts"
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Software Development"
       ]
     }
   },
-
+  "expertise": {
+    "Generative AI & LLMs": [
+      "Expert in LangChain framework",
+      "Proficient with LlamaIndex implementation",
+      "Advanced Prompt Engineering & optimization",
+      "Experience with state-of-the-art language models",
+      "RAG (Retrieval-Augmented Generation) systems"
+    ],
+    "Programming Languages": [
+      "Python - Advanced",
+      "Java - Proficient",
+      "JavaScript/TypeScript - Advanced",
+      "C++ - Intermediate",
+      "SQL - Proficient"
+    ],
+    "AI/ML Technologies": [
+      "TensorFlow & PyTorch",
+      "Scikit-learn",
+      "OpenAI API, Google AI API",
+      "Computer Vision",
+      "Natural Language Processing"
+    ],
+    "Web Development": [
+      "React - Advanced",
+      "Node.js - Advanced",
+      "Express.js",
+      "Vite",
+      "Full-stack development"
+    ],
+    "Tools & Platforms": [
+      "Git & GitHub",
+      "Docker",
+      "AWS",
+      "VS Code",
+      "Jupyter Notebooks"
+    ]
+  },
   "contact": {
     "email": "muthuganesh2205@gmail.com",
     "phone": "+91 9688241253",
     "github": "https://github.com/muthu12-sudo",
-    "linkedin": "https://www.linkedin.com/in/muthuganesh-r-32b2031b5",
-    "portfolio": "This portfolio website"
+    "linkedin": "https://www.linkedin.com/in/muthuganesh-r-32b2031b5"
   },
-
-  "skills": {
-    "generativeAI": {
-      "category": "Generative AI & LLMs",
-      "details": [
-        "Expert in LangChain framework",
-        "Proficient with LlamaIndex implementation",
-        "Advanced Prompt Engineering & optimization",
-        "Experience with state-of-the-art language models",
-        "RAG (Retrieval-Augmented Generation) systems"
-      ]
-    },
-    "programming": {
-      "category": "Programming & Development",
-      "languages": [
-        "Python - Advanced",
-        "Java - Proficient",
-        "JavaScript/TypeScript - Full-stack",
-        "TypeScript - React development"
-      ],
-      "details": [
-        "Full-stack web development",
-        "Backend development with Python and Java",
-        "Frontend development with React",
-        "Clean code practices and design patterns"
-      ]
-    },
-    "webDevelopment": {
-      "category": "Web Development",
-      "frontend": [
-        "React.js with TypeScript",
-        "Modern CSS and responsive design",
-        "Component-based architecture",
-        "State management patterns"
-      ],
-      "backend": [
-        "Node.js and Express.js",
-        "API design and development",
-        "Database design and optimization"
-      ]
-    },
-    "gis": {
-      "category": "GIS & Geo-Spatial AI",
-      "details": [
-        "Spatial Data Analysis",
-        "Geospatial AI Solutions",
-        "Location-based intelligent systems",
-        "Mapping and visualization"
-      ]
-    },
-    "leadership": {
-      "category": "Leadership & Management",
-      "details": [
-        "Team leadership experience",
-        "Hackathon participation and wins",
-        "Project management and planning",
-        "Collaboration and mentoring",
-        "Problem-solving under pressure"
-      ]
-    }
-  },
-
-  "achievements": [
-    "Machine Learning with Python - Professional certification",
-    "Graphic Designing Internship - Hands-on design experience",
-    "MS Office Suite Certification - Professional productivity",
-    "C Programming Course Certification - Sololearn",
-    "Intelligent Game Designing Course - Creative development",
-    "Multiple hackathon participations and wins"
-  ],
-
-  "strengths": [
-    "Strong foundation in AI/ML technologies with practical implementations",
-    "Proficient in multiple programming languages and frameworks",
-    "Experience with cutting-edge technologies (LLMs, Generative AI, RAG systems)",
-    "Leadership and team management skills with proven track record",
-    "Creative problem-solving abilities with innovative thinking",
-    "Full-stack development capabilities covering frontend and backend",
-    "Geospatial technology expertise and spatial data analysis",
-    "Excellent communication and collaboration skills",
-    "Passion for continuous learning and staying updated with tech trends"
-  ],
-
-  "workExperience": [
-    {
-      "role": "Student Developer",
-      "company": "Personal Projects",
-      "duration": "Ongoing",
-      "description": "Building innovative AI/ML projects and full-stack applications to solve real-world problems"
-    }
-  ],
-
-  "interests": [
-    "Artificial Intelligence and Machine Learning",
-    "Large Language Models and Generative AI",
-    "Full-stack Web Development",
-    "Geospatial AI and Location Intelligence",
-    "Open-source contributions",
-    "Tech Innovation and Problem-solving",
-    "Teaching and mentoring others"
-  ],
-
-  "aboutMe": "I'm a passionate technologist driven by the desire to create meaningful solutions using cutting-edge technology. With a strong foundation in AI/ML and full-stack development, I'm always exploring new frontiers in technology. I believe in continuous learning, collaboration, and using technology to make a positive impact. When not coding, I enjoy learning about emerging technologies, contributing to open-source projects, and helping others grow their tech skills."
+  "personality": {
+    "communication_style": "Friendly, professional, and conversational",
+    "availability": "Available for collaboration and opportunities",
+    "interests": "AI, Machine Learning, Software Development, Open Source Contribution"
+  }
 }
